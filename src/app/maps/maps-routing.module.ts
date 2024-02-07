@@ -8,14 +8,14 @@ import { PropertiesPageComponent } from './pages/properties-page/properties-page
 
 const routes: Routes = [
   { 
-    path: 'maps',
+    path: '',
     component: MapsLayoutComponent,
     children: [
-      { path: 'full-screen', component: FullScreenPageComponent },
+      { path: 'fullscreen', component: FullScreenPageComponent },
       { path: 'zoom-range', component: ZoomRangePageComponent },
       { path: 'markers', component: MarkersPageComponent },
       { path: 'properties', component: PropertiesPageComponent },
-      { path: '**', redirectTo: 'full-screen' }
+      { path: '**', redirectTo: 'fullscreen' }
     ]
   },
 ];
